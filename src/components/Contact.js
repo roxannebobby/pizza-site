@@ -5,5 +5,9 @@ import '../css/Contact.css';
 import '../css/fonts.css';
 
 export default function Contact() {
-	return <h1>the contact page</h1>;
+	return (
+		<div>
+			<h1>the contact page</h1>;
+		</div>
+	);
 }

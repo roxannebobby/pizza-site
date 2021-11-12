@@ -13,10 +13,10 @@ export default function Home() {
 
 	return (
 		<div
-			className='display-container'
+			className='display-container w3-display-container w3-grayscale-min'
 			style={{ backgroundImage: `url(${background})` }}
 		>
-			<div className='bottom-left'>
+			<div className='w3-display-bottomleft'>
 				<span className='x-large-tag'>Open from 10am to 12pm</span>
 			</div>
 

@@ -5,8 +5,8 @@ import './css/App.css';
 import './css/fonts.css';
 
 import Home from './components/Home';
-import ItemsList from './components/ItemsList';
-import Item from './components/Item';
+import MenuList from './components/MenuList';
+import MenuItem from './components/MenuItem';
 import Contact from './components/Contact';
 
 // Dummy data
@@ -18,10 +18,10 @@ function fetchFoodItems() {
 }
 
 export default function App(props) {
-	const [foodItems, setFoodItems] = useState([]);
+	const [menuItems, setMenuItems] = useState([]);
 
 	useEffect(() => {
-		fetchFoodItems().then((res) => setFoodItems(res.data));
+		fetchFoodItems().then((res) => setMenuItems(res.data));
 	}, []);
 
 	return (
@@ -43,10 +43,10 @@ export default function App(props) {
 			{/* 👉 STEP 4 - Build a Switch with a Route for each of the components imported at the top */}
 			<Switch>
 				<Route path='/items-list/:itemId'>
-					<Item items={foodItems} />
+					<MenuItem menuItems={menuItems} />
 				</Route>
 				<Route path='/items-list'>
-					<ItemsList items={foodItems} />
+					<MenuList menuItems={menuItems} />
 				</Route>
 				<Route path='/contact'>
 					<Contact />

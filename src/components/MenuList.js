@@ -3,7 +3,12 @@ import React from 'react';
 //import { useNavigate } from 'react-router-dom';
 import '../css/Items.css';
 import '../css/fonts.css';
+import './MenuItem';
 
-export default function ItemsList() {
-	return <h1>The items list page</h1>;
+export default function MenuList() {
+	return (
+		<div>
+			<h1>The menu list page</h1>;
+		</div>
+	);
 }

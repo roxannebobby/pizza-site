@@ -63,6 +63,14 @@
 	bottom: 0;
 }
 
+.w3-text-white,
+.w3-hover-text-white:hover {
+	color: #fff !important;
+	font-size: 100px;
+	font-family: Amatic SC;
+	font-weight: bolder;
+}
+
 .w3-tag {
 	background-color: #000;
 	color: #fff;

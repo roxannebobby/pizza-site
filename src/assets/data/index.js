@@ -6,6 +6,7 @@ export default [
 		price: '250.00',
 		cuisine_name: 'Indian',
 		category_name: 'Appeteasers',
+		img_URL: 'https://source.unsplash.com/random/199x99?chicken',
 	},
 	{
 		id: '94301',
@@ -15,6 +16,7 @@ export default [
 		price: '250.00',
 		cuisine_name: 'Indian',
 		category_name: 'Appeteasers',
+		img_URL: 'https://source.unsplash.com/random/200x99?chicken',
 	},
 	{
 		id: '94304',
@@ -23,6 +25,7 @@ export default [
 		price: '215.00',
 		cuisine_name: 'Indian',
 		category_name: 'Appeteasers',
+		img_URL: 'https://source.unsplash.com/random/202x100?spicy',
 	},
 	{
 		id: '94307',
@@ -32,6 +35,7 @@ export default [
 		price: '215.00',
 		cuisine_name: 'Indian',
 		category_name: 'Appeteasers',
+		img_URL: 'https://source.unsplash.com/random/201x104?pita',
 	},
 	{
 		id: '94310',
@@ -41,6 +45,7 @@ export default [
 		price: '205.00',
 		cuisine_name: 'Indian',
 		category_name: 'Appeteasers',
+		img_URL: 'https://source.unsplash.com/random/202x102?pita',
 	},
 	{
 		id: '94313',
@@ -49,5 +54,6 @@ export default [
 		price: '615.00',
 		cuisine_name: 'Indian',
 		category_name: 'Appeteasers',
+		img_URL: 'https://source.unsplash.com/random/200x104?appetizer',
 	},
 ];

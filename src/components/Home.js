@@ -21,13 +21,16 @@ export default function Home() {
 			</div>
 
 			<div className='w3-display-middle w3-center display-middle-font'>
-				<span className='w3-text-white'>
+				<span className='w3-text-white font-change'>
 					Casey's
 					<br />
 					PIZZA & PUB
 				</span>
 				<p>
-					<button onClick={routeToMenu} className='button-xl-black'>
+					<button
+						onClick={routeToMenu}
+						className='w3-button w3-xxlarge w3-black'
+					>
 						Let me see the menu!
 					</button>
 				</p>

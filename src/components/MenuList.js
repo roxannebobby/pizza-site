@@ -1,14 +1,28 @@
 import React from 'react';
-// We'll need React Router's own version of the History API
-//import { useNavigate } from 'react-router-dom';
-import '../css/Items.css';
+import { Link, useRouteMatch } from 'react-router-dom';
+import '../css/MenuList.css';
 import '../css/fonts.css';
 import './MenuItem';
+import { Cards } from 'react-bootstrap';
 
-export default function MenuList() {
+export default function MenuList(props) {
+	const { menuItems } = props;
+	const { url } = useRouteMatch();
+
 	return (
-		<div>
-			<h1>The menu list page</h1>;
+		<div className='items-list-wrapper'>
+			{menuItems.map((item) => (
+				<div className='item-card' key={item.id}>
+					<Link to={`${url}/${item.id}`}>
+						<img
+							className='items-list-image'
+							src={item.img_URL}
+							alt={item.name}
+						/>
+						<p>{item.name}</p>
+					</Link>
+				</div>
+			))}
 		</div>
 	);
 }
